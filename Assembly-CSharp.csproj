@@ -47,6 +47,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\2D Car\carController.cs" />
+     <Compile Include="Assets\CameraController.cs" />
+     <Compile Include="Assets\CarController.cs" />
+     <Compile Include="Assets\EndGame.cs" />
+     <Compile Include="Assets\FollowCamera.cs" />
+     <Compile Include="Assets\Goal.cs" />
      <Compile Include="Assets\backpackController.cs" />
      <Compile Include="Assets\bird_0_controller.cs" />
      <Compile Include="Assets\bodyController.cs" />

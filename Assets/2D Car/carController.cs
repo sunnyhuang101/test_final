@@ -33,7 +33,7 @@ public class carController : MonoBehaviour {
 
 	public float carRotationSpeed;
 
-	public float jumpSpeed = 10f;
+	//public float jumpSpeed = 10f;
 	public float moveSpeed = 5000f;
 
 	// Use this for initialization
