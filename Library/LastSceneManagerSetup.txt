@@ -1,4 +1,7 @@
 sceneSetups:
 - path: Assets/2D Car/carScene.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/Yianting.unity
   isLoaded: 1
   isActive: 1
