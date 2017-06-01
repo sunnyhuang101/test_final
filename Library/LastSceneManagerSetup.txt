@@ -3,5 +3,8 @@ sceneSetups:
   isLoaded: 0
   isActive: 0
 - path: Assets/Yianting.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/2.unity
   isLoaded: 1
   isActive: 1

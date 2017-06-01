@@ -92,6 +92,7 @@
     <Compile Include="Assets\dadController.cs" />
     <Compile Include="Assets\eightController.cs" />
     <Compile Include="Assets\taxi_controller.cs" />
+    <Compile Include="Assets\trap1controll.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
