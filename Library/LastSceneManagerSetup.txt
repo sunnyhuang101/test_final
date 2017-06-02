@@ -1,4 +1,1 @@
-sceneSetups:
-- path: Assets/2D Car/carScene.unity
-  isLoaded: 1
-  isActive: 1
+sceneSetups: []

@@ -24,12 +24,16 @@ public class CarController : MonoBehaviour {
 	private float y = 0.30f;
 	private float z = 1.17f;
 
+	public AudioSource throw_sound;
+
+
 	public float jumpSpeed = 5000f;
 
 
 	void Start()
 	{
 		backpack_list = new List<backpackController> ();
+		throw_sound = GameObject.FindGameObjectWithTag ("throwing").GetComponent<AudioSource> ();
 	}
 
 	void Update ()
@@ -61,7 +65,7 @@ public class CarController : MonoBehaviour {
 			var obj = Instantiate(backpack, fire.position, fire.rotation);
 			obj.transform.localScale = new Vector3(x, y, z);
 			backpack_list.Add (obj);
-
+			throw_sound.Play ();
 		}
 
 		if (Input.GetKeyDown(KeyCode.Z)){
@@ -70,6 +74,8 @@ public class CarController : MonoBehaviour {
 
 		}
 		rb.AddTorque(-rotation * rotationSpeed * Time.fixedDeltaTime);
+
+
     }
 
 }

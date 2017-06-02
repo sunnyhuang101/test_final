@@ -58,6 +58,7 @@
      <Compile Include="Assets\dadController.cs" />
      <Compile Include="Assets\eightController.cs" />
      <Compile Include="Assets\taxi_controller.cs" />
+     <Compile Include="Assets\yianting\Yiangting\trap1controll.cs" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
