@@ -50,7 +50,8 @@ public class backpackController : MonoBehaviour {
 			hit = 0;
 			alph = 1;
 
-			target.gameObject.SetActive (false);
+			//target.gameObject.SetActive (false);
+			Destroy(target);
 			this.gameObject.SetActive (false);
 			Debug.Log (target.gameObject.GetComponent<SpriteRenderer> ().name);
 
@@ -99,7 +100,7 @@ public class backpackController : MonoBehaviour {
 			hit = 1; //是否擊中enemy
 			target = t;
 			if ((target.gameObject.GetComponent<SpriteRenderer> ().name == "taxi") 
-				||	(target.gameObject.GetComponent<SpriteRenderer> ().name == "taxi (1)")
+				||	(target.gameObject.GetComponent<SpriteRenderer> ().name == "taxi2")
 				)
 			{
 				taxi_sound.Play ();

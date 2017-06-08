@@ -13,6 +13,7 @@ public class taxi_controller : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		this.gameObject.SetActive (false);
 		taxi_s = this.gameObject.GetComponent<SpriteRenderer> ();
 		taxif_s = frontwheel.gameObject.GetComponent<SpriteRenderer> ();
 		taxiw_s = backwheel.gameObject.GetComponent<SpriteRenderer> ();
@@ -29,7 +30,10 @@ public class taxi_controller : MonoBehaviour {
 				taxiw_s.material.color =  new Color (1, 1, 1,alph);
 			alph = alph - 0.01f;//若是計程車被擊中，輪子也要消失
 		}
-
+		if (taxif_s.material.color.a < 1) {
+			Destroy (taxif_s);
+			Destroy (taxiw_s);
+		}
 	//		boss.material.color =  new Color (1, 1, 1,alph);
 	
 			

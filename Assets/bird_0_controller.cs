@@ -11,7 +11,9 @@ public class bird_0_controller : MonoBehaviour {
 	public float firstSpeed;
 
 	// Use this for initialization
+
 	void Start () {
+		this.gameObject.SetActive (false);
 		animator = GetComponent<Animator>();
 		firstSpeed = Vector2.Distance(animator.transform.position, target.transform.position) * speed;
 	}
@@ -23,9 +25,9 @@ public class bird_0_controller : MonoBehaviour {
 
 
 			//先移動過後，再計算新的 speed
-			animator.transform.position = Vector3.Lerp(animator.transform.position, target.transform.position, speed*Time.deltaTime);
+		//animator.transform.position = Vector3.Lerp(animator.transform.position, target.transform.position, speed*Time.deltaTime);
 			speed = calculateNewSpeed();
-
+		this.transform.Translate(new Vector2 (-8, 0)*Time.deltaTime);
 
 	}
 
