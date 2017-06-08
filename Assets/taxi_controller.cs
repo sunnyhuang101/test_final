@@ -30,7 +30,7 @@ public class taxi_controller : MonoBehaviour {
 				taxiw_s.material.color =  new Color (1, 1, 1,alph);
 			alph = alph - 0.01f;//若是計程車被擊中，輪子也要消失
 		}
-		if (taxif_s.material.color.a < 1) {
+		if (taxif_s.material.color.a < 0) {
 			Destroy (taxif_s);
 			Destroy (taxiw_s);
 		}

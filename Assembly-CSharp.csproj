@@ -52,6 +52,8 @@
      <Compile Include="Assets\EndGame.cs" />
      <Compile Include="Assets\FollowCamera.cs" />
      <Compile Include="Assets\Goal.cs" />
+     <Compile Include="Assets\TingtingController.cs" />
+     <Compile Include="Assets\appleController.cs" />
      <Compile Include="Assets\backpackController.cs" />
      <Compile Include="Assets\bird_0_controller.cs" />
      <Compile Include="Assets\bodyController.cs" />

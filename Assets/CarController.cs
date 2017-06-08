@@ -25,6 +25,7 @@ public class CarController : MonoBehaviour {
 	private float z = 1.17f;
 
 	public AudioSource throw_sound;
+	public AudioSource jump_sound;
 
 
 	public float jumpSpeed = 50000f;
@@ -60,6 +61,7 @@ public class CarController : MonoBehaviour {
 	{
 		backpack_list = new List<backpackController> ();
 		throw_sound = GameObject.FindGameObjectWithTag ("throwing").GetComponent<AudioSource> ();
+		jump_sound = GameObject.FindGameObjectWithTag ("jumping").GetComponent<AudioSource> ();
 	}
 
 	void Update ()
@@ -119,6 +121,7 @@ public class CarController : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.Z)){
 			GetComponent<Rigidbody2D>().AddForce(new Vector2( 0,jumpSpeed));
 			Debug.Log ("jump");
+			jump_sound.Play ();
 
 		}
 		if (Input.GetMouseButtonDown(0) ) {
